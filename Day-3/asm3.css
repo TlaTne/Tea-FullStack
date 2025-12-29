@@ -1,0 +1,25 @@
+td {
+  vertical-align: top;
+  padding: 5px 0;
+}
+
+.option-item {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.option-item input {
+  margin-right: 8px;
+}
+
+.buttons-row td:last-child {
+  padding-top: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin-right: 10px;
+  padding: 2px 12px;
+}
