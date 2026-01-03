@@ -1,0 +1,10 @@
+/* ul ~ p{
+    color: red;
+} */
+/* .todos input:checked ~ span{
+    text-decoration: line-through;
+} */
+p + h2,
+p + h2+h2{
+    color: red;
+}
