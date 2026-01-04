@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: 2;
+}
+h2{
+    color: rgb(122, 170, 212);
+}
+span{
+     background: #c9c9e6;
+}
+.text-link{
+    text-decoration: underline;
+    color: rgb(122, 170, 212);
+}
+
+.promo-box{
+    margin-top: 20px;
+    padding: 20px 28px;
+    border: 2px solid #c9c9e6;
+    border-radius: 10px;
+    background: #fff;
+}
+.promo-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
