@@ -1,0 +1,44 @@
+*{
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.container{
+    background: #2f3e4e;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+}
+h2{
+    margin: 0 0 10px;
+    
+}
+.highlight{
+    color: orange;
+}
+
+p{
+    display: flex;
+    margin-bottom: 20px;
+     color: #ddd;
+}
+
+.form input{
+    padding: 9px;
+    width: 200px;
+}
+.form button{
+    padding: 9px;
+    background: yellow;
+}
+
+.form input:hover{
+    background: #ddd;
+}
+.form input:hover::placeholder{
+    color: orange;
+}
+.form button:hover{
+    background-color: orange;
+    color: #fff;
+}

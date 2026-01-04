@@ -4,7 +4,19 @@
 /* .todos input:checked ~ span{
     text-decoration: line-through;
 } */
-p + h2,
+/* p + h2,
 p + h2+h2{
     color: red;
-}
+} */
+ /* ul li a[href = "https://mail.google.com/mail/u/0/#inbox"]{
+    color: red;
+ } */
+
+ /* .row [class^="col-"]{
+   color: red;
+
+ } */
+/* .box * {
+    background: blueviolet;
+    color: azure;
+} */
