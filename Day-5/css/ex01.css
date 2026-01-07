@@ -1,0 +1,26 @@
+.container{
+    background-image: url(https://i.ytimg.com/vi/x0fSBAgBrOQ/maxresdefault.jpg);
+    width: 1250px;
+    height: 550px;
+}
+
+.card{
+    width: 400px;
+    height: 240px;
+    background: rgba(253, 252, 252, 0.548);
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(10, 10, 10, 0.732);
+}
+
+
+h3{
+    font-weight: bold;
+}
+
+span{
+    text-decoration: underline;
+}
