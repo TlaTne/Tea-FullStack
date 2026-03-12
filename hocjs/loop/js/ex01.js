@@ -32,3 +32,5 @@ for(initial; condition; step){
 
 //     console.log('lan lap thu: ${i}');
 // }
+
+//luyện tập js
