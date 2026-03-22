@@ -176,3 +176,98 @@ b6Btn.addEventListener("click", function() {
     result.innerText = "Số tiền phải đóng là: " + formattedTotal + " VNĐ";
     result.style.color = "blue";
 });
+
+// ================= BÀI 7 =================
+
+const b7Btn = document.querySelector(".btn-7");
+
+b7Btn.addEventListener("click", function(){
+    let n = parseFloat(document.querySelector("#b7_number").value);
+    const result = document.querySelector("#b7_result");
+
+     if (isNaN(n)) {
+        result.innerText = "Vui lòng nhập dữ liệu!";
+        result.style.color = "red";
+        return;
+    }
+  
+    let answer = 0;
+
+    for(let i = 1; i <= n; i++){
+      answer += i * (i + 1);
+    }
+    result.innerText = `Giá trị là: ${answer}`;
+    result.style.color = "green";
+
+
+} ); 
+
+
+// ================= BÀI 8 =================
+
+const b8Btn = document.querySelector(".btn-8");
+
+b8Btn.addEventListener("click", function(){
+    let n = parseFloat(document.querySelector("#b8_number").value);
+    const result = document.querySelector("#b8_result");
+
+     if (isNaN(n)) {
+        result.innerText = "Vui lòng nhập dữ liệu!";
+        result.style.color = "red";
+        return;
+    }
+  
+     if (n < 2) {
+    result.innerText = n + " không phải là số nguyên tố";
+    result.style.color = "red";
+    return;
+  }
+  let isPrime = true;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i == 0) {
+      isPrime = false;
+      break;
+    }
+  }
+  if (isPrime) {
+    result.innerText = n + " là số nguyên tố";
+    result.style.color = "green";
+  } else {
+    result.innerText = n + " không phải là số nguyên tố";
+    result.style.color = "red";
+  }
+
+
+} ); 
+
+
+// ================= BÀI 9 =================
+const b9Btn = document.querySelector(".btn-9");
+
+b9Btn.addEventListener("click", function () {
+  const result = document.querySelector("#b9_result");
+
+  let leftCol = "";
+  let rightCol = "";
+
+  for (let i = 1; i <= 5; i++) {
+    leftCol += `<div class="table-title">Bảng ${i}</div>`;
+    for (let j = 1; j <= 10; j++) {
+      leftCol += `<div>${i} x ${j} = ${i * j}</div>`;
+    }
+    leftCol += "<br>";
+  }
+
+  for (let i = 6; i <= 10; i++) {
+    rightCol += `<div class="table-title">Bảng ${i}</div>`;
+    for (let j = 1; j <= 10; j++) {
+      rightCol += `<div>${i} x ${j} = ${i * j}</div>`;
+    }
+    rightCol += "<br>";
+  }
+
+  result.innerHTML = `
+    <div class="column">${leftCol}</div>
+    <div class="column">${rightCol}</div>
+  `;
+});
