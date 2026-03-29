@@ -80,14 +80,53 @@ Trong js, tất cả các hàm đều là Closure
 // console.log(sum(10,20));
 
 
-function sum(a){
-   return function (b){
+// function sum(a){
+//    return function (b){
 
-    return a + b;
-   };
+//     return a + b;
+//    };
 
+// }
+
+// var add = sum(10);
+// var result = sum(20);
+// console.log(result);
+
+//IIFE
+// (function(){
+
+//    console.log("hoc lap trinh khong kho");
+
+// })();
+
+//Giải thuật đệ quy
+
+// function showNumber(b){
+//    console.log(n);
+//    if(n > 1){
+//      showNumber(n - 1);
+//    }
+// }
+
+// showNumber(10);
+
+// Tính tổng 1 + 2 +3 +4 + ..... + N (Dùng đệ quy)
+
+// function getTotal(n){
+//   if( n === 1){
+//      return 1;
+//   }
+//   return n + getTotal(n - 1);
+// }
+
+// getTotal(10);
+
+
+function fibonaci(){
+      if(n === 1 || n === 2){
+         return 1;
+      }
+      return fibonaci(n - 1) + fibonaci(n - 2);
 }
 
-var add = sum(10);
-var result = sum(20);
-console.log(result);
+console.log(fibonaci(5));
